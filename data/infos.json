@@ -1,0 +1,23 @@
+{
+  "name": "Mein Kebab",
+  "slogan": "Le vrai Gemüse Kebap de Berlin, à Lille",
+  "address": "2 Pl. Déliot, 59000 Lille, France",
+  "services": ["Terrasse", "Sur place", "À emporter"],
+  "phone": "+33 3 00 00 00 00",
+  "email": "contact@meinkebab.fr",
+  "google_maps_url": "https://maps.google.com/?q=2+Pl.+Déliot,+59000+Lille",
+  "rating": 5.0,
+  "reviews_count": 1586,
+  "hours": [
+    { "day": "lundi", "open": "12:00", "close": "22:30" },
+    { "day": "mardi", "open": "12:00", "close": "22:30", "note": "Armistice — horaires susceptibles d'être modifiés" },
+    { "day": "mercredi", "closed": true },
+    { "day": "jeudi", "open": "12:00", "close": "22:30" },
+    { "day": "vendredi", "open": "12:00", "close": "23:00" },
+    { "day": "samedi", "open": "18:00", "close": "23:00" },
+    { "day": "dimanche", "open": "18:00", "close": "23:00" }
+  ],
+  "features": ["Broche maison", "Légumes grillés frais", "Sauces onctueuses", "Pain moelleux"],
+  "disclaimer": "Les horaires et prix peuvent évoluer. Merci de vérifier sur place."
+}
+

@@ -1,0 +1,92 @@
+{
+  "categories": [
+    {
+      "name": "Sandwichs",
+      "items": [
+        {
+          "name": "Berliner",
+          "price": 11.0,
+          "description": "Poulet, sauce au choix, légumes grillés, salade (tomate, oignon, chou rouge), feta. Style Berlin.",
+          "tags": ["best-seller"],
+          "_a_confirmer": true
+        },
+        {
+          "name": "À l'Ancienne",
+          "price": 10.0,
+          "description": "Poulet, sauce au choix, salade composée ou tomate-oignon-chou rouge.",
+          "_a_confirmer": true
+        },
+        {
+          "name": "Veggy (falafel)",
+          "price": 10.0,
+          "description": "Falafel, sauce au choix, légumes grillés, feta (version sans feta possible).",
+          "tags": ["veggie"],
+          "_a_confirmer": true
+        }
+      ]
+    },
+    {
+      "name": "Bowls",
+      "items": [
+        {
+          "name": "Bowl Berliner",
+          "price": 11.0,
+          "description": "Poulet, sauce, riz, frites, légumes grillés, salade composée ou tomate-oignon-chou rouge, feta.",
+          "_a_confirmer": true
+        }
+      ]
+    },
+    {
+      "name": "Salades",
+      "items": [
+        { "name": "Salade Feta", "price": 7.0, "description": "Salade composée, feta.", "_a_confirmer": true },
+        { "name": "Salade Falafel", "price": 7.0, "description": "Salade composée, falafel.", "_a_confirmer": true },
+        { "name": "Salade Tenders", "price": 7.0, "description": "Salade composée, tenders de poulet.", "_a_confirmer": true }
+      ]
+    },
+    {
+      "name": "Extras",
+      "items": [
+        { "name": "Tenders (3 pièces)", "price": 4.5, "_a_confirmer": true },
+        { "name": "Frites (moyenne)", "price": 3.5, "_a_confirmer": true },
+        { "name": "Barquette de riz", "price": 3.0, "_a_confirmer": true },
+        { "name": "Suppléments viande", "price": 2.0, "_a_confirmer": true },
+        { "name": "Supplément cheddar", "price": 1.0, "_a_confirmer": true },
+        { "name": "Supplément feta", "price": 1.0, "_a_confirmer": true }
+      ]
+    },
+    {
+      "name": "Sauces",
+      "items": [
+        { "name": "Blanche (maison)" },
+        { "name": "Piquante (maison)" },
+        { "name": "Cocktail" },
+        { "name": "Hannibal" },
+        { "name": "Mayonnaise" },
+        { "name": "Ketchup" },
+        { "name": "Harissa" }
+      ]
+    },
+    {
+      "name": "Boissons",
+      "items": [
+        { "name": "Canette 33 cl", "price": 2.0, "_a_confirmer": true },
+        { "name": "Eau", "price": 1.5, "_a_confirmer": true },
+        { "name": "Ayran", "price": 2.0, "_a_confirmer": true },
+        { "name": "Freeze", "price": 2.5, "_a_confirmer": true },
+        { "name": "Red Bull", "price": 3.0, "_a_confirmer": true },
+        { "name": "Capri-Sun", "price": 2.0, "_a_confirmer": true }
+      ]
+    },
+    {
+      "name": "Menus",
+      "items": [
+        { "name": "Menu Berliner", "price": 12.0, "description": "Sandwich + boisson + accompagnement.", "_a_confirmer": true },
+        { "name": "Menu À l'Ancienne", "price": 11.0, "_a_confirmer": true },
+        { "name": "Menu Veggy", "price": 11.0, "_a_confirmer": true }
+      ]
+    }
+  ],
+  "allergenes": ["Gluten", "Lait", "Sésame", "Œuf (certaines sauces)"]
+}
+

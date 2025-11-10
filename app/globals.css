@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #0B0B0D;
+  --foreground: #FFFFFF;
+  --noir-charbon: #0B0B0D;
+  --blanc-pur: #FFFFFF;
+  --rouge-broche: #D2483A;
+  --rouge-broche-hover: #B73A2E;
+  --gris-ardoise: #1F2329;
+  --jaune-epices: #F2B705;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-noir-charbon: var(--noir-charbon);
+  --color-blanc-pur: var(--blanc-pur);
+  --color-rouge-broche: var(--rouge-broche);
+  --color-rouge-broche-hover: var(--rouge-broche-hover);
+  --color-gris-ardoise: var(--gris-ardoise);
+  --color-jaune-epices: var(--jaune-epices);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Bebas Neue', 'Anton', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--rouge-broche);
+  outline-offset: 2px;
+}
