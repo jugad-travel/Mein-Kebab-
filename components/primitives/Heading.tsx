@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 interface HeadingProps {
@@ -17,7 +17,7 @@ const sizeClasses = {
 };
 
 export function Heading({ level = 2, children, className }: HeadingProps) {
-  const Tag = `h${level}` as keyof JSX.IntrinsicElements;
+  const Tag = `h${level}` as keyof React.JSX.IntrinsicElements;
   return (
     <Tag
       className={cn(
