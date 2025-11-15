@@ -37,7 +37,7 @@ export function SiteHeader() {
         "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-500",
         isScrolled
           ? "bg-noir-charbon border-b border-blanc-pur/10 shadow-2xl"
-          : "bg-transparent"
+          : "bg-noir-charbon sm:bg-transparent"
       )}
       role="banner"
       style={{ width: '100%' }}
