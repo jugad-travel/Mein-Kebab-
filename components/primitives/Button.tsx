@@ -11,6 +11,8 @@ interface ButtonProps {
   size?: "sm" | "md" | "lg";
   className?: string;
   disabled?: boolean;
+  target?: string;
+  rel?: string;
 }
 
 const variantClasses = {
@@ -35,8 +37,10 @@ export function Button({
   size = "md",
   className,
   disabled,
+  target,
+  rel,
 }: ButtonProps) {
-  const props = href ? { href } : { onClick, type };
+  const props = href ? { href, target, rel } : { onClick, type };
   
   return (
     <Component
