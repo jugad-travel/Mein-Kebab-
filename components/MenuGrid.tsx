@@ -21,11 +21,11 @@ export function MenuGrid() {
   return (
     <Container>
       {/* Filtres par catégorie */}
-      <div className="mb-8 sm:mb-12 flex flex-wrap justify-center gap-2 sm:gap-4">
+      <div className="mb-8 sm:mb-12 grid grid-cols-3 sm:flex sm:flex-wrap sm:justify-center gap-2 sm:gap-4">
         <Button
           variant={selectedCategory === null ? "primary" : "secondary"}
           size="sm"
-          className="text-xs sm:text-sm"
+          className="text-xs sm:text-sm w-full sm:w-auto"
           onClick={() => setSelectedCategory(null)}
         >
           Tout
@@ -35,7 +35,7 @@ export function MenuGrid() {
             key={category.name}
             variant={selectedCategory === category.name ? "primary" : "secondary"}
             size="sm"
-            className="text-xs sm:text-sm"
+            className="text-xs sm:text-sm w-full sm:w-auto"
             onClick={() => setSelectedCategory(category.name)}
           >
             {category.name}
