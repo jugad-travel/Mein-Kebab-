@@ -40,7 +40,7 @@ export function SiteHeader() {
           : "bg-transparent"
       )}
       role="banner"
-      style={{ width: '100%', margin: 0, padding: 0 }}
+      style={{ width: '100%' }}
     >
       <Container>
         <nav className="flex h-20 items-center justify-between" aria-label="Navigation principale">
@@ -104,14 +104,14 @@ export function SiteHeader() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="flex items-center justify-center rounded-14 p-2 text-blanc-pur transition-colors hover:bg-blanc-pur/10 focus-visible:outline-2 focus-visible:outline-rouge-broche md:hidden"
+            className="flex items-center justify-center rounded-2xl p-3 text-blanc-pur transition-colors hover:bg-blanc-pur/10 focus-visible:outline-2 focus-visible:outline-rouge-broche md:hidden min-h-[48px] min-w-[48px]"
             aria-label="Menu mobile"
             aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? (
-              <X className="h-6 w-6" aria-hidden="true" />
+              <X className="h-7 w-7" aria-hidden="true" />
             ) : (
-              <Menu className="h-6 w-6" aria-hidden="true" />
+              <Menu className="h-7 w-7" aria-hidden="true" />
             )}
           </button>
         </nav>
@@ -128,16 +128,16 @@ export function SiteHeader() {
             className="glass border-t border-blanc-pur/10 md:hidden"
           >
             <Container>
-              <ul className="space-y-2 py-4" role="list">
+              <ul className="space-y-3 py-6" role="list">
                 {navItems.map((item) => (
                   <li key={item.href} role="listitem">
                     <Link
                       href={item.href}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className={cn(
-                        "block rounded-14 px-4 py-3 text-sm font-bold uppercase tracking-wider transition-colors hover:bg-blanc-pur/10 focus-visible:outline-2 focus-visible:outline-rouge-broche",
+                        "block rounded-2xl px-6 py-4 text-base font-bold uppercase tracking-wider transition-colors hover:bg-blanc-pur/10 focus-visible:outline-2 focus-visible:outline-rouge-broche min-h-[52px] flex items-center",
                         pathname === item.href
-                          ? "text-rouge-broche"
+                          ? "text-rouge-broche bg-rouge-broche/10"
                           : "text-blanc-pur/90"
                       )}
                       style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -148,7 +148,7 @@ export function SiteHeader() {
                   </li>
                 ))}
                 <li>
-                  <Button as="a" href="/menu" size="sm" className="mt-4 w-full font-bold">
+                  <Button as="a" href="/menu" size="lg" className="mt-4 w-full font-bold">
                     Voir le menu
                   </Button>
                 </li>

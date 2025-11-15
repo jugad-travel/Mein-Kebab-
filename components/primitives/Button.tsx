@@ -22,9 +22,9 @@ const variantClasses = {
 };
 
 const sizeClasses = {
-  sm: "px-4 py-2 text-sm",
-  md: "px-6 py-3 text-base",
-  lg: "px-8 py-4 text-lg",
+  sm: "py-3 text-sm min-h-[44px] button-padding-sm",
+  md: "py-4 text-base min-h-[48px] button-padding-md",
+  lg: "py-5 text-lg min-h-[56px] button-padding-lg",
 };
 
 export function Button({
@@ -47,7 +47,7 @@ export function Button({
       {...props}
       disabled={disabled}
       className={cn(
-        "inline-flex items-center justify-center gap-2 rounded-14 font-bold uppercase tracking-wider transition-all duration-300 focus-visible:outline-2 focus-visible:outline-rouge-broche focus-visible:outline-offset-2",
+        "inline-flex items-center justify-center gap-2 sm:gap-2 rounded-2xl sm:rounded-14 font-bold uppercase transition-all duration-300 focus-visible:outline-2 focus-visible:outline-rouge-broche focus-visible:outline-offset-2",
         variantClasses[variant],
         sizeClasses[size],
         disabled && "opacity-50 cursor-not-allowed",

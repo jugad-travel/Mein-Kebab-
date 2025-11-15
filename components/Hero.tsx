@@ -53,7 +53,7 @@ export function Hero() {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="mb-4 sm:mb-8 text-left"
             >
-              <p className="text-xs sm:text-base font-medium uppercase tracking-wider text-blanc-pur" style={{ fontFamily: "'Inter', sans-serif" }}>
+              <p className="text-sm sm:text-base font-medium uppercase tracking-wider text-blanc-pur" style={{ fontFamily: "'Inter', sans-serif" }}>
                 WILLKOMMEN IN MEIN BERLINER
               </p>
             </motion.div>
@@ -67,7 +67,7 @@ export function Hero() {
             >
               <h1
                 id="hero-title"
-                className="font-montserrat text-5xl font-black leading-[0.95] text-blanc-pur sm:text-6xl md:text-7xl lg:text-8xl"
+                className="font-montserrat text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.95] text-blanc-pur"
                 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 900 }}
               >
                 <span className="block tracking-tight">MEIN BERLINER</span>
@@ -89,22 +89,20 @@ export function Hero() {
               transition={{ delay: 0.7, duration: 0.8 }}
               className="mt-8 sm:mt-12 flex flex-col items-start gap-4 sm:gap-6"
             >
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
-                <a
-                  href="/contact"
-                  className="group flex items-center justify-center gap-2 sm:gap-3 rounded-14 border-2 border-rouge-broche bg-noir-charbon/80 px-6 py-3 sm:px-12 sm:py-5 text-sm sm:text-lg font-bold uppercase tracking-wider text-blanc-pur backdrop-blur-sm transition-all duration-300 hover:bg-rouge-broche hover:scale-105 w-full sm:w-auto"
-                  style={{ fontFamily: "'Montserrat', sans-serif" }}
-                >
-                  <MapPin className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span>NOUS TROUVER</span>
-                </a>
-              </div>
+              <a
+                href="/contact"
+                className="group flex items-center justify-center gap-2 sm:gap-3 rounded-2xl sm:rounded-14 border-2 border-rouge-broche bg-noir-charbon/80 py-3 sm:py-5 text-sm sm:text-lg font-bold uppercase text-blanc-pur backdrop-blur-sm transition-all duration-300 hover:bg-rouge-broche hover:scale-105 min-h-[44px] sm:min-h-auto sm:w-auto"
+                style={{ fontFamily: "'Montserrat', sans-serif", paddingLeft: '1.5rem', paddingRight: '1.5rem' }}
+              >
+                <MapPin className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span>NOUS TROUVER</span>
+              </a>
               <a
                 href={infos.ubereats_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center justify-center gap-2 sm:gap-3 rounded-14 border-2 border-jaune-epices bg-jaune-epices/20 px-6 py-3 sm:px-12 sm:py-5 text-sm sm:text-lg font-bold uppercase tracking-wider text-blanc-pur backdrop-blur-sm transition-all duration-300 hover:bg-jaune-epices hover:text-noir-charbon hover:scale-105 w-full sm:w-auto"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
+                className="group flex items-center justify-center gap-2 sm:gap-3 rounded-2xl sm:rounded-14 border-2 border-jaune-epices bg-jaune-epices/20 py-3 sm:py-5 text-sm sm:text-lg font-bold uppercase text-blanc-pur backdrop-blur-sm transition-all duration-300 hover:bg-jaune-epices hover:text-noir-charbon hover:scale-105 min-h-[44px] sm:min-h-auto sm:w-auto"
+                style={{ fontFamily: "'Montserrat', sans-serif", paddingLeft: '1.5rem', paddingRight: '1.5rem' }}
               >
                 <ShoppingBag className="h-4 w-4 sm:h-5 sm:w-5" />
                 <span>COMMANDER SUR UBER EATS</span>

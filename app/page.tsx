@@ -33,7 +33,7 @@ export default function Home() {
       <Hero />
 
       {/* Bandeau infos clés */}
-      <section className="border-y border-gris-ardoise/30 bg-gris-ardoise/60 py-4 sm:py-6 md:py-8 w-full" aria-label="Informations clés" style={{ width: '100%', margin: 0, paddingLeft: 0, paddingRight: 0 }}>
+      <section className="border-y border-gris-ardoise/30 bg-gris-ardoise/60 py-4 sm:py-6 md:py-8 w-full" aria-label="Informations clés">
         <Container>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 text-sm sm:text-base">
             <div className="flex items-center gap-3">
@@ -71,11 +71,8 @@ export default function Home() {
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ delay: index * 0.15, duration: 0.6 }}
                 >
-                  <Card hover className="h-full">
+                  <Card hover className="h-full border-2 border-rouge-broche">
                     <div className="text-center">
-                      <div className="mb-6 inline-flex rounded-14 bg-rouge-broche/20 p-4">
-                        <Icon icon={IconComponent} size="xl" className="text-rouge-broche" />
-                      </div>
                       <Heading level={3} className="mb-3 sm:mb-4">{feature}</Heading>
                       <p className="text-base sm:text-lg leading-relaxed text-blanc-pur/70">
                         {featureDescriptions[index]}
@@ -326,11 +323,11 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              <div className="flex flex-col gap-5 sm:flex-row pt-4">
-                <Button as="a" href={`tel:${infos.phone}`} size="lg">
+              <div className="flex flex-col items-center sm:items-start gap-4 sm:gap-5 sm:flex-row pt-4">
+                <Button as="a" href={`tel:${infos.phone}`} size="lg" className="w-auto max-w-[200px] sm:w-auto text-sm sm:text-lg py-3 sm:py-5 min-h-[44px] sm:min-h-auto">
                   Appeler
                 </Button>
-                <Button as="a" href={infos.google_maps_url} variant="outline" size="lg">
+                <Button as="a" href={infos.google_maps_url} variant="outline" size="lg" className="w-auto max-w-[200px] sm:w-auto text-sm sm:text-lg py-3 sm:py-5 min-h-[44px] sm:min-h-auto">
                   Itinéraire
                 </Button>
               </div>

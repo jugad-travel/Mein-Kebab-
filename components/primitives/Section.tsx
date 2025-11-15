@@ -27,7 +27,6 @@ export function Section({
         variantClasses[variant],
         className
       )}
-      style={{ width: '100%', margin: 0, paddingLeft: 0, paddingRight: 0 }}
     >
       {children}
     </section>
