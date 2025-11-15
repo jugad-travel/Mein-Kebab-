@@ -30,7 +30,7 @@ export function Hero() {
             quality={90}
             className="object-contain object-bottom object-right"
             sizes="100vw"
-            style={{ imageRendering: 'high-quality' }}
+            style={{ imageRendering: 'auto' }}
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-noir-charbon/70 via-noir-charbon/50 to-noir-charbon/70" />
