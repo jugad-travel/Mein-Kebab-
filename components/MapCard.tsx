@@ -1,42 +1,42 @@
 "use client";
 
-import { MapPin, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { infos } from "@/lib/data";
+import { motion } from "framer-motion";
+import { Card } from "./primitives/Card";
+import { Button } from "./primitives/Button";
 
 export function MapCard() {
-  return (
-    <div className="space-y-4">
-      <div className="rounded-2xl border border-gris-ardoise bg-gris-ardoise/50 p-6">
-        <div className="mb-4 flex items-center gap-2">
-          <MapPin className="h-5 w-5 text-rouge-broche" aria-hidden="true" />
-          <h3 className="font-display text-2xl text-blanc-pur">Adresse</h3>
-        </div>
-        <p className="text-blanc-pur/80">{infos.address}</p>
-        <a
-          href={infos.google_maps_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 inline-flex items-center gap-2 rounded-2xl bg-rouge-broche px-4 py-2 text-sm font-medium text-blanc-pur transition-colors hover:bg-rouge-broche-hover focus-visible:outline-2 focus-visible:outline-rouge-broche"
-        >
-          Itinéraire
-          <ExternalLink className="h-4 w-4" aria-hidden="true" />
-        </a>
-      </div>
+  const mapsEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(infos.address)}&output=embed`;
 
-      <div className="overflow-hidden rounded-2xl border border-gris-ardoise">
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="relative space-y-6"
+    >
+      <Card className="relative overflow-hidden p-0">
         <iframe
-          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dS6a4ZUU5JhZ0&q=${encodeURIComponent(infos.address)}`}
+          src={mapsEmbedUrl}
           width="100%"
-          height="400"
+          height="500"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Carte Google Maps - Mein Kebab"
+          title="Carte Google Maps - Mein Berliner"
           aria-label="Carte Google Maps montrant l'emplacement du restaurant"
+          className="w-full"
         />
+      </Card>
+      <div className="text-center">
+        <Button as="a" href={infos.google_maps_url} target="_blank" rel="noopener noreferrer" size="lg">
+          Ouvrir dans Google Maps
+          <ExternalLink className="h-5 w-5" />
+        </Button>
       </div>
-    </div>
+    </motion.div>
   );
 }
-

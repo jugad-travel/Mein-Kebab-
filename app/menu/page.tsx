@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { MenuGrid } from "@/components/MenuGrid";
-import { Section } from "@/components/Section";
+import { Section } from "@/components/primitives/Section";
+import { Container } from "@/components/primitives/Container";
+import { Heading } from "@/components/primitives/Heading";
 import { infos } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -30,15 +32,15 @@ export default function MenuPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Section
-        id="menu-page"
-        title="Notre menu"
-        subtitle="Découvrez nos spécialités et nos produits"
-        className="min-h-screen bg-noir-charbon pt-8"
-      >
-        <MenuGrid />
+      <Section id="menu-page" variant="dark" className="!pt-8 md:!pt-12">
+        <Container>
+          <div className="mb-8 sm:mb-16 text-center">
+            <Heading level={2} className="mb-2 sm:mb-4">Notre menu</Heading>
+            <p className="text-base sm:text-xl text-blanc-pur/80">Découvrez nos spécialités et nos produits</p>
+          </div>
+          <MenuGrid />
+        </Container>
       </Section>
     </>
   );
 }
-

@@ -12,7 +12,7 @@ export function PriceTag({ price, aConfirmer, className }: PriceTagProps) {
 
   return (
     <div className={cn("flex items-center gap-2", className)}>
-      <span className="font-display text-2xl font-normal text-rouge-broche">
+      <span className="font-display text-3xl font-normal text-rouge-broche">
         {price.toFixed(2)} €
       </span>
       {aConfirmer && (
@@ -27,4 +27,3 @@ export function PriceTag({ price, aConfirmer, className }: PriceTagProps) {
     </div>
   );
 }
-

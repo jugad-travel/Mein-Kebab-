@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&family=Anton:wght@400&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -8,8 +8,11 @@
   --blanc-pur: #FFFFFF;
   --rouge-broche: #D2483A;
   --rouge-broche-hover: #B73A2E;
+  --rouge-broche-light: #E85A4A;
   --gris-ardoise: #1F2329;
+  --gris-ardoise-light: #2A2F37;
   --jaune-epices: #F2B705;
+  --jaune-epices-light: #FFC926;
 }
 
 @theme inline {
@@ -19,10 +22,13 @@
   --color-blanc-pur: var(--blanc-pur);
   --color-rouge-broche: var(--rouge-broche);
   --color-rouge-broche-hover: var(--rouge-broche-hover);
+  --color-rouge-broche-light: var(--rouge-broche-light);
   --color-gris-ardoise: var(--gris-ardoise);
+  --color-gris-ardoise-light: var(--gris-ardoise-light);
   --color-jaune-epices: var(--jaune-epices);
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-display: 'Bebas Neue', 'Anton', sans-serif;
+  --color-jaune-epices-light: var(--jaune-epices-light);
+  --font-sans: 'Inter', 'Montserrat', system-ui, -apple-system, sans-serif;
+  --font-display: 'Bebas Neue', 'Anton', 'Montserrat', sans-serif;
 }
 
 * {
@@ -33,6 +39,10 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -43,25 +53,63 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 80px;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display);
-  font-weight: 400;
+  font-family: 'Montserrat', 'Bebas Neue', 'Anton', sans-serif;
+  font-weight: 900;
   letter-spacing: 0.02em;
-  line-height: 1.2;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 button {
   font-family: inherit;
+  transition: all 0.3s ease;
 }
 
 :focus-visible {
   outline: 2px solid var(--rouge-broche);
   outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--noir-charbon);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rouge-broche);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--rouge-broche-hover);
+}
+
+::selection {
+  background: var(--rouge-broche);
+  color: var(--blanc-pur);
 }

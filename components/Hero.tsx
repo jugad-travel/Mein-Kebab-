@@ -1,56 +1,118 @@
 "use client";
 
-import Link from "next/link";
-import { ArrowRight, MapPin } from "lucide-react";
-import { infos } from "@/lib/data";
+import Image from "next/image";
+import { ArrowRight, MapPin, ShoppingBag } from "lucide-react";
 import { motion } from "framer-motion";
+import { Container } from "./primitives/Container";
+import { infos } from "@/lib/data";
 
 export function Hero() {
   return (
     <section
-      className="relative flex min-h-[600px] items-center justify-center overflow-hidden bg-noir-charbon"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16 sm:pt-20 w-full"
       aria-labelledby="hero-title"
     >
-      {/* Image de fond placeholder */}
-      <div className="absolute inset-0 bg-gradient-to-b from-noir-charbon/80 to-noir-charbon">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iODAwIiBmaWxsPSIjMUYyMzI5Ii8+PHRleHQgeD0iNjAwIiB5PSI0MDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UGhvdG8gS2ViYWIgUGxhY2Vob2xkZXI8L3RleHQ+PC9zdmc+')] bg-cover bg-center opacity-20" />
-      </div>
-
-      <div className="container relative z-10 mx-auto px-4 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+      {/* Image de fond */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div 
+          className="absolute inset-0" 
+          style={{ 
+            transform: 'scale(1.3, 1.3)', 
+            transformOrigin: 'bottom right',
+            willChange: 'transform'
+          }}
         >
-          <h1
-            id="hero-title"
-            className="mb-4 font-display text-5xl font-normal leading-tight text-blanc-pur sm:text-6xl md:text-7xl lg:text-8xl"
-          >
-            {infos.slogan}
-          </h1>
-          <p className="mb-8 text-lg text-blanc-pur/80 sm:text-xl">
-            Le meilleur de la cuisine kebab, façon Berlin.
-          </p>
-
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link
-              href="#menu"
-              className="flex items-center gap-2 rounded-2xl bg-rouge-broche px-6 py-3 text-base font-medium text-blanc-pur shadow-lg transition-all hover:bg-rouge-broche-hover hover:shadow-xl focus-visible:outline-2 focus-visible:outline-rouge-broche"
-            >
-              Voir le menu
-              <ArrowRight className="h-5 w-5" aria-hidden="true" />
-            </Link>
-            <Link
-              href="/contact"
-              className="flex items-center gap-2 rounded-2xl border-2 border-blanc-pur/20 bg-blanc-pur/10 px-6 py-3 text-base font-medium text-blanc-pur backdrop-blur-sm transition-all hover:border-blanc-pur/40 hover:bg-blanc-pur/20 focus-visible:outline-2 focus-visible:outline-rouge-broche"
-            >
-              <MapPin className="h-5 w-5" aria-hidden="true" />
-              Nous trouver
-            </Link>
-          </div>
-        </motion.div>
+          <Image
+            src="/images/hero/kebab mein home page.jpg"
+            alt="Mein Berliner - Le vrai Gemüse Kebap de Berlin"
+            fill
+            priority
+            quality={90}
+            className="object-contain object-bottom object-right"
+            sizes="100vw"
+            style={{ imageRendering: 'high-quality' }}
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-noir-charbon/70 via-noir-charbon/50 to-noir-charbon/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-noir-charbon/95 via-noir-charbon/40 via-noir-charbon/20 via-transparent to-noir-charbon/60" />
       </div>
+
+      {/* Contenu */}
+      <Container className="relative z-10">
+        <div className="flex min-h-[calc(100vh-64px)] sm:min-h-[calc(100vh-80px)] items-center py-8 sm:py-0">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.2 }}
+            className="w-full"
+          >
+            {/* Badge Willkommen */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.8 }}
+              className="mb-4 sm:mb-8 text-left"
+            >
+              <p className="text-xs sm:text-base font-medium uppercase tracking-wider text-blanc-pur" style={{ fontFamily: "'Inter', sans-serif" }}>
+                WILLKOMMEN IN MEIN BERLINER
+              </p>
+            </motion.div>
+
+            {/* Titre principal */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+              className="mb-8 sm:mb-16 text-left"
+            >
+              <h1
+                id="hero-title"
+                className="font-montserrat text-5xl font-black leading-[0.95] text-blanc-pur sm:text-6xl md:text-7xl lg:text-8xl"
+                style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 900 }}
+              >
+                <span className="block tracking-tight">MEIN BERLINER</span>
+                <span className="block tracking-tight">LE VRAI</span>
+                <span className="block tracking-tight">GEMÜSE KEBAP</span>
+                <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
+                  <span className="block text-rouge-broche tracking-tight">DE BERLIN</span>
+                  <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal normal-case tracking-normal text-blanc-pur" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}>
+                    À LILLE
+                  </span>
+                </div>
+              </h1>
+            </motion.div>
+
+            {/* Boutons CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7, duration: 0.8 }}
+              className="mt-8 sm:mt-12 flex flex-col items-start gap-4 sm:gap-6"
+            >
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
+                <a
+                  href="/contact"
+                  className="group flex items-center justify-center gap-2 sm:gap-3 rounded-14 border-2 border-rouge-broche bg-noir-charbon/80 px-6 py-3 sm:px-12 sm:py-5 text-sm sm:text-lg font-bold uppercase tracking-wider text-blanc-pur backdrop-blur-sm transition-all duration-300 hover:bg-rouge-broche hover:scale-105 w-full sm:w-auto"
+                  style={{ fontFamily: "'Montserrat', sans-serif" }}
+                >
+                  <MapPin className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span>NOUS TROUVER</span>
+                </a>
+              </div>
+              <a
+                href={infos.ubereats_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center gap-2 sm:gap-3 rounded-14 border-2 border-jaune-epices bg-jaune-epices/20 px-6 py-3 sm:px-12 sm:py-5 text-sm sm:text-lg font-bold uppercase tracking-wider text-blanc-pur backdrop-blur-sm transition-all duration-300 hover:bg-jaune-epices hover:text-noir-charbon hover:scale-105 w-full sm:w-auto"
+                style={{ fontFamily: "'Montserrat', sans-serif" }}
+              >
+                <ShoppingBag className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span>COMMANDER SUR UBER EATS</span>
+              </a>
+            </motion.div>
+          </motion.div>
+        </div>
+      </Container>
     </section>
   );
 }
-

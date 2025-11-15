@@ -1,11 +1,13 @@
 {
-  "name": "Mein Kebab",
+  "name": "Mein Berliner",
   "slogan": "Le vrai Gemüse Kebap de Berlin, à Lille",
   "address": "2 Pl. Déliot, 59000 Lille, France",
   "services": ["Terrasse", "Sur place", "À emporter"],
   "phone": "+33 3 00 00 00 00",
   "email": "contact@meinkebab.fr",
   "google_maps_url": "https://maps.google.com/?q=2+Pl.+Déliot,+59000+Lille",
+  "google_reviews_url": "https://www.google.com/search?client=safari&sa=X&sca_esv=486c0866b8b04e5b&rls=en&tbm=lcl&sxsrf=AE3TifPie_9tK6le_Etm_7dOk2-nzAA_cQ:1763226647142&q=Mein+Berliner+-+Döner+Kebap+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDM3MTc3szS3NLCwtDA2N7U0Nd3AyPiKUdE3NTNPwSm1KCczL7VIQVfB5fA2EMM7NSmxQMGxLLN4ESthNQDAVxgSYwAAAA&rldimm=16747769790898375955&hl=fr-FR&ved=2ahUKEwibotiP0_SQAxWDKvsDHb3YHMIQ9fQKegQIPRAF&biw=1427&bih=709&dpr=2#lkt=LocalPoiReviews",
+  "ubereats_url": "https://www.ubereats.com/fr/store/mein-berliner-kebap/IqcxfEpwXVaiHhbVGC7-Dg",
   "rating": 5.0,
   "reviews_count": 1586,
   "hours": [

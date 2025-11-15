@@ -106,16 +106,16 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="fr">
+    <html lang="fr" className="w-full">
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${inter.variable} antialiased`}>
+      <body className={`${inter.variable} antialiased w-full`}>
         <SiteHeader />
-        <main role="main">{children}</main>
+        <main role="main" className="w-full">{children}</main>
         <Footer />
       </body>
     </html>

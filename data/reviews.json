@@ -1,9 +1,50 @@
 [
-  { "author": "Laura D.", "rating": 5, "text": "Le meilleur kebab de Lille, légumes grillés incroyables !" },
-  { "author": "Bastien M.", "rating": 5, "text": "Pain moelleux, portions généreuses, service rapide." },
-  { "author": "Inès R.", "rating": 5, "text": "Terrasse sympa et sauces maison au top." },
-  { "author": "Thomas L.", "rating": 5, "text": "Authentique, goût Berlin garanti. À refaire !" },
-  { "author": "Sophie M.", "rating": 5, "text": "Le Berliner est une tuerie, feta et légumes parfaits." },
-  { "author": "Marc P.", "rating": 5, "text": "Service au top, qualité premium pour un kebab." }
+  {
+    "author": "Fatiha Sajida",
+    "rating": 5,
+    "text": "Un Accueil parfait, suivie d'un service rapide et un kebab vraiment succulent. Je ne regrette absolument pas les kilomètres parcouru pour venir ici. N'hésitez plus foncez! Dommage je peux pas mettre 6 étoiles.",
+    "date": "Il y a 2 semaines"
+  },
+  {
+    "author": "Sammy ZAIDI",
+    "rating": 5,
+    "text": "J'ai demandé un kebab au goût du chef ... je ne l'oublierai jamais. Je pèse mes mots je pense que c'est le meilleur kebab que j'ai mangé dans ma vie. Et en touche sucré le dessert conseillé par le chef était incroyable. Service rapide et au top dans un endroit propre. à TRÈS vite",
+    "date": "Il y a 4 mois"
+  },
+  {
+    "author": "Sétigui Sidibe",
+    "rating": 5,
+    "text": "J'y suis allé la première fois sur recommandation d'un ami sans attente particulière, et j'avoue ne pas avoir regretté de l'avoir suivi. L'assaisonnement de la viande, les légumes grillés, le pain croustillant, les frites fraîches. Oh la la, comment oublier les sauces ! J'ai suivi la recommandation des chefs-kébabiers et j'ai pris le combo blanche-spicy maison: une exploration culinaire à chaque bouchée agrémentée de piquant ! Bref, un délice importé tout droit de Berlin pour le plus grand plaisir des Lillois 🥰 Bonus, l'établissement passe de la bonne techno berlinoise en fond pour les amateurs",
+    "date": "Il y a 7 mois"
+  },
+  {
+    "author": "Ouijdane Naji",
+    "rating": 5,
+    "text": "Nous avons passé un super moment. Les kebabs étaient vraiment excellents et savoureux, bien garnis, et parfaitement préparés. L'hospitalité était au top, le responsable a été très drôle et super gentil avec nous, ce qui a rendu le repas encore plus agréable. Nous avons pris trois superbes kebabs et quelques desserts, agréables pour finir le repas, même si dommage il manquait un verre de thé à la menthe pour les accompagner 😉 Je recommande !!!",
+    "date": "Il y a un mois"
+  },
+  {
+    "author": "khal doune",
+    "rating": 5,
+    "text": "J'ai voulu tester ce berliner aux 5 étoiles. Que dire? C'est un sans faute enfaite. Une viande de qualité (de poulet on prend pas trop de risque ..), des crudités et légumes de qualité. Les sauces sont bonnes. Frites fraîches double cuisson. Prévoyez un peu d'attente les commandes sont nombreuses. Régalade assurée.",
+    "date": "Il y a un mois"
+  },
+  {
+    "author": "Sebastien Cuisset",
+    "rating": 5,
+    "text": "Je me demandais comment ce lieu pouvait avoir une note de 5/5 sur plus de 1300 avis... Et puis j'y suis allé ! Le meilleur Kebab que j'ai mangé et de loin : pain croustillant à l'extérieur et moelleux a l'intérieur, viande extra goûteuse et mélange de légumes et feta incroyable. A tester si vous ne l'avez jamais fait ! Seul petit point négatif : l'attente. Mais quand c'est fait maison c'est normal et on l'oublie vite",
+    "date": "Il y a 7 mois"
+  },
+  {
+    "author": "nursena sahin",
+    "rating": 5,
+    "text": "Meilleur Berliner que j'ai mangé ! Tout est frais et fais sur place le jour même. Viande de qualité, les légumes incroyables et les sauces maison superbe !! Même le visuel est magnifique. Le personnel est très accueillant, agréable, souriant. Un endroit propre et attirant.",
+    "date": "Il y a un an"
+  },
+  {
+    "author": "My Coach Greg",
+    "rating": 5,
+    "text": "Meilleur Berliner de Lille, sans hésitation ! Pain frais et croustillant, viande incroyablement savoureuse, légumes croquants et fêta fondante... Une vraie pépite pour les amateurs de bon kebab. À tester absolument !",
+    "date": "Il y a 8 mois"
+  }
 ]
-
