@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description: `${infos.slogan}. Broche maison, légumes grillés frais, sauces onctueuses.`,
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/images/logo/kebab mein kebab .jpg",
         width: 1200,
         height: 630,
         alt: infos.name,
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${infos.name} - ${infos.slogan}`,
     description: `${infos.slogan}. Broche maison, légumes grillés frais, sauces onctueuses.`,
-    images: ["/og-image.jpg"],
+    images: ["/images/logo/kebab mein kebab .jpg"],
   },
   robots: {
     index: true,
